@@ -20,6 +20,8 @@ export abstract class ZoomBaseToolView extends ActionToolView {
     this.plot_view.update_range(zoom_info, {scrolling: true})
 
     this.model.document?.interactive_start(this.plot_model)
+
+    this._trigger_ranges_update()
   }
 }
 
